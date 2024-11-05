@@ -1,41 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     background-color: rgb(100, 100, 100);
     font-family: Arial;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 100px;
 }
 
 main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+    padding: 5%;
     background-color: rgb(50, 50, 50);
-    margin: 0 10% 0 10%;
-    min-height: 600px;
-    min-width: 1050px;
     border-radius: 15px;
-    padding-left: 16%;
-    padding-top: 3%;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.541);
 }
 
-section {
+div {
     background-color: rgb(100, 100, 100);
-    width: 750px;
+    width: 70%;
     padding: 5%;
     border-radius: 24px;
     padding-top: 2%;
     padding-bottom: 2%;
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.11);
+    border-collapse: collapse;
 }
 
-.tabela,
-td {
+.tabela td {
     margin: 0 3%;
-    width: fit-content;
-    box-shadow: 4px 4px 4px 5px rgba(0, 0, 0, 0.24);
-    border-radius: 5px;
-    background-color: rgb(150, 150, 150);
+    border-collapse: collapse;
+    border-radius: 5px;  
     text-align: center;
 }
 
-.tabela tr :hover{
+tr{
+    box-shadow: 4px 4px 4px 5px rgba(0, 0, 0, 0.24);
+    background-color: rgb(150, 150, 150);
+}
+
+tr:nth-child(even){
+    background-color: rgb(100, 100, 100);
+    color: rgb(247, 247, 247);
+}
+
+tr :hover{
     background-color: rgb(124, 124, 124);
+    scale: 0.95;
 }
 
 .tabledata-img,
