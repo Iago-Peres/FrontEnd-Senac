@@ -52,7 +52,7 @@ tr:nth-child(even){
     color: rgb(247, 247, 247);
 }
 
-tr :hover{
+tr:hover{
     background-color: rgb(124, 124, 124);
     scale: 0.95;
 }
