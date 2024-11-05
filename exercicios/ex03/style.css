@@ -24,25 +24,24 @@ section {
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.11);
 }
 
-table,
+.tabela,
 td {
     margin: 0 3%;
     width: fit-content;
     box-shadow: 4px 4px 4px 5px rgba(0, 0, 0, 0.24);
     border-radius: 5px;
     background-color: rgb(150, 150, 150);
+    text-align: center;
 }
 
-.tabela tr :hover,
-.tabela {
+.tabela tr :hover{
     background-color: rgb(124, 124, 124);
-    text-align: center;
 }
 
 .tabledata-img,
 .tabledata-img img {
     border-radius: 8px;
-    width: fit-content;
+    width: 75%;
 }
 
 thead,
@@ -51,8 +50,4 @@ caption {
     color: whitesmoke;
     border-radius: 8px;
     box-shadow: 4px 1px 4px rgba(0, 0, 0, 0.541);
-}
-
-.mplayer {
-    width: fit-content;
 }
