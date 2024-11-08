@@ -35,14 +35,23 @@ header {
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.541);
 }
 
-nav,
-ul,
-li{
+
+
+nav ul {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    text-decoration: none;
+    list-style-type: none;
     gap: 5%;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #bdbdbd;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
 }
 
 main {
