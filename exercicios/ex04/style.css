@@ -13,11 +13,11 @@ body {
     gap: 2%;
 }
 
-.container{
+.container {
     display: flex;
     flex-direction: row;
-    justify-self:stretch;
-    align-content:center;
+    justify-self: stretch;
+    align-content: center;
     justify-content: space-around;
 }
 
@@ -34,8 +34,6 @@ header {
     padding: 1%;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.541);
 }
-
-
 
 nav ul {
     display: flex;
