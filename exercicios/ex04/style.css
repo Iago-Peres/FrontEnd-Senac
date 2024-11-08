@@ -107,6 +107,9 @@ aside {
 }
 
 footer {
+    display: flex;
+    align-content: center;
+    justify-content: center;
     background-color: #171718;
     color: #c2cac2;
     width: 100%;
