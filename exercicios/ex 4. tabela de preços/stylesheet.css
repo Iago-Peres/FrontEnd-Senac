@@ -1,41 +1,41 @@
 * {
+    box-sizing: border-box;
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
 }
 
 body {
     display: flex;
-    flex-direction: column;
-    width: 100vw;
-    height: 100vh;
+    flex-flow: column wrap;
     background-color: black;
+    height: 100vh;
 }
 
 main {
     display: flex;
-    flex-direction: column wrap;
+    flex-flow: column wrap;
     justify-content: center;
     flex: 1;
+    padding: 5%;
 }
 
 section {
     display: flex;
     flex-flow: row wrap;
-    flex: 0.8;
-    padding: 1%;
-    gap: 1%;
-    justify-content:flex-start;
-    align-content: flex-start;
+    justify-content:space-evenly;
+    align-content: center;
     background-color: dimgray;
+    flex: 0.7;
+    padding: 1%;
+    gap: 1%;    
 }
 
 #card {
     display: flex;
-    padding: 1%;
-    flex: 0.2;
     flex-flow: column wrap;
     justify-content: center;
     align-items: center;
     background-color: antiquewhite;
+    flex: 0.2;
+    padding: 1%;
 }
