@@ -12,18 +12,11 @@ body{
 }
 
 main{
-    display: flex;
-    flex: 1;
-    flex-flow: row wrap;
+    flex: 3;
     background-color: darkgray;
 }
 
-#main-div{
-    flex: 0.75;
-    background-color: rgb(118, 118, 160);
-}
-
-section{
-    flex:0.25;
+aside{
+    flex:1;
     background-color: rgb(138, 92, 92);
 }

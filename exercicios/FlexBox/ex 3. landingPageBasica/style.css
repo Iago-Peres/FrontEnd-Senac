@@ -24,14 +24,14 @@ main{
     flex: 1;
 }
 
-section{
+.container{
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
     background-color: bisque;
 }
 
-div{
+section{
     display: flex;
     padding: 1%;
     flex: 0.2;
