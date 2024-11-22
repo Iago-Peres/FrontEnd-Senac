@@ -1,0 +1,1 @@
+Crie um layout onde as colunas tenham um mínimo de 200px e ocupem o máximo de espaço disponível usando minmax e auto-fit.

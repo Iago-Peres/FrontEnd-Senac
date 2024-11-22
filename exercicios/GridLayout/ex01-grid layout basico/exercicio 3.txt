@@ -1,0 +1,1 @@
+Adicione um espaçamento de 20px entre as colunas e 10px entre as linhas no layout do exercício 1.

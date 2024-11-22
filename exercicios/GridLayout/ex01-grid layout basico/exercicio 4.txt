@@ -1,0 +1,3 @@
+Combinação de Grid e Flexbox
+
+Dentro de cada .grid-item, crie 3 novos itens e use Flexbox para alinhar esses itens ao centro vertical e horizontalmente.

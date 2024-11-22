@@ -1,0 +1,1 @@
+Modifique o exercício anterior para que a primeira coluna tenha 1fr, a segunda tenha 2fr e a terceira tenha 1fr.

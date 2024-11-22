@@ -1,0 +1,1 @@
+Altere o exercício 1 para que todos os itens da grade estejam centralizados vertical e horizontalmente.
