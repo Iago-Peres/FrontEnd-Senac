@@ -15,13 +15,13 @@ body {
         "footer footer footer";
 }
 
-.html-header {
+#html-header {
     border: solid;
     background-color: rgb(50, 50, 50);
     grid-area: header;
 }
 
-.html-main {
+#html-main {
     display: flex;
     flex-flow: column wrap;
     border: solid 1px;
@@ -29,7 +29,7 @@ body {
     grid-area: main;
 }
 
-.html-aside {
+#html-aside {
     display: flex;
     flex-flow: column wrap;
     border: solid 1px;
@@ -37,7 +37,7 @@ body {
     grid-area: aside;
 }
 
-.html-footer {
+#html-footer {
     border: solid 1px;
     background-color: rgb(50, 50, 50);
     grid-area: footer;
