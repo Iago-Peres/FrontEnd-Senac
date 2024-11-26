@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador de Cliques</title>
+    <style>
+        main,body{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: dimgray;
+            height: 100vh;
+        }
+    </style>
+</head>
+<body>
+    <header></header>
+    <main>
+        <button>CLIQUE</button>
+        <p id="contador">0</p>
+    </main>
+    <footer></footer>
+    <script>
+        let contador = document.getElementById("contador");
+        let button = document.querySelector("button");
+        button.addEventListener("click",()=>{
+            contador.textContent = parseInt(contador.textContent)+1;
+            document.contador.innerHTML = contador.textContent;
+        })
+    </script>
+</body>
+</html>
