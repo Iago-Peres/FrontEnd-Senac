@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex01</title>
+</head>
+<body>
+    <header></header>
+    <main>
+        <h2>default</h2>
+        <button>alterar texto</button>
+    </main>
+    <footer></footer>
+
+    <script>
+        let button = document.querySelector('button');
+        let h2 = document.querySelector('h2');
+
+        button.addEventListener('click', ()=> {
+            h2.innerHTML = 'Texto alterado pelo botão!';
+        });
+    </script>
+</body>
+</html>
