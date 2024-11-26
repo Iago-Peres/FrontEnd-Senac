@@ -1,15 +1,38 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ex02</title>
+
+    <style>
+        body,
+        main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100vh;
+        }
+    </style>
 </head>
+
 <body>
     <header></header>
     <main>
-        
+        <button id="btn">Cor</button>
     </main>
     <footer></footer>
+
+    <script>
+        const btn = document.getElementById('btn');
+        const main = document.querySelector('main');
+        btn.addEventListener('click', () => {
+            const colors = ['red', 'blue', 'green', 'yellow', 'purple', 'orange'];
+            const randomColor = colors[Math.floor(Math.random() * colors.length)];
+            main.style.backgroundColor = randomColor;
+        });
+    </script>
 </body>
 </html>
