@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario de contato</title>
+    <style>
+        main {
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #434642;
+        }
+
+        form {
+            display: flex;
+            flex-flow: column wrap;
+            align-items: stretch;
+            padding: 3%;
+            gap: 5%;
+            background-color: rgb(90, 94, 97);
+            height: 50%;
+            width: 15%;
+        }
+
+        div {
+            display: flex;
+            flex-direction: column;
+        }
+    </style>
+</head>
+
+<body>
+    <header></header>
+    <main>
+        <form action="" id="formulario">
+            <div>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+            </div>
+            <div>
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div>
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" required></textarea>
+            </div>
+            <div>
+                <button id="btn-enviar" type="submit">Enviar</button>
+            </div>
+        </form>
+    </main>
+    <footer></footer>
+
+    <script>
+        let button = document.getElementById("btn-enviar");
+
+        let formulario = document.getElementById("formulario");
+
+        button.addEventListener('submit', function (event) {
+            event.preventDefault();
+        });
+
+        button.addEventListener('click', () => {
+            let nome = document.getElementById("nome").value;
+            let email = document.getElementById("email").value;
+            let mensagem = document.getElementById("mensagem").value;
+
+            if (nome && email && mensagem != "") {
+                alert("enviando formulario");
+                let formulario = document.getElementById("formulario");
+                formulario.appendChild(document.createElement("p"));
+                let status = document.querySelector("p");
+                status.innerHTML = "Enviado com Sucesso!";
+                status.style.color = "#66d344";
+            }
+        });
+    </script>
+</body>
+
+</html>
