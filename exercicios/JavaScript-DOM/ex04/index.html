@@ -47,7 +47,7 @@
             </div>
             <div>
                 <label for="mensagem">Mensagem:</label>
-                <textarea id="mensagem" name="mensagem" required></textarea>
+                <textarea id="mensagem" name="mensagem"></textarea>
             </div>
             <div>
                 <button id="btn-enviar" type="submit">Enviar</button>
@@ -70,9 +70,9 @@
             let email = document.getElementById("email").value;
             let mensagem = document.getElementById("mensagem").value;
 
-            if (nome && email && mensagem != "") {
+            if (nome && email && mensagem != null) {
                 alert("enviando formulario");
-                let formulario = document.getElementById("formulario");
+                let formulario = document.getElementById('formulario');
                 formulario.appendChild(document.createElement("p"));
                 let status = document.querySelector("p");
                 status.innerHTML = "Enviado com Sucesso!";
@@ -81,5 +81,4 @@
         });
     </script>
 </body>
-
 </html>
