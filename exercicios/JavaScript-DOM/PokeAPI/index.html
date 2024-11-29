@@ -13,19 +13,29 @@
     <div id="pokedex-background">
         <h1>Pokedex</h1>
 
-        <div id="pokedex-input">           
+        <div id="pokedex-input">
             <input type="text" id="pokemonName" placeholder="Digite o nome do Pokémon">
             <button id="searchButton">Buscar</button>
         </div>
 
-        <div id="pokemonInfo">
+        <div id="div-pokeName">
             <h2 id="pokemonTitle"></h2>
-            <img id="pokemonImage" src="" alt="Imagem do Pokémon">
-            <p id="pokemonType"></p>
         </div>
 
+        <div id="div-pokeImg">
+            <img id="pokemonImage" src="" alt="Imagem do Pokémon">
+        </div>
+
+        <p id="pokemonType"></p>
         <div id="stats-container">
-            <p id="pokemonStats"></p>
+            
+            <div class="info-div">
+                <ul id="pokemonStats"></ul>
+            </div>
+
+            <div class="info-div">
+                <ul id="pokemonAbilities"></ul>
+            </div>
         </div>
     </div>
 
