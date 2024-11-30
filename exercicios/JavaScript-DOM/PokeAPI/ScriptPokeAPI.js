@@ -32,7 +32,7 @@ document.getElementById('searchButton').addEventListener('click', () => {
                 statLi.textContent = `${stat.stat.name}: ${stat.base_stat}`
                 console.log(`${stat.stat.name}: ${stat.base_stat}`)
                 statUlist.appendChild(statLi);
-            });
+            }); //substituir appendChild para uma atribuição de valor para evitar a criação de multiplos status
 
             //document.getElementById('pokemonStats').textContent = `Estatísticas: ${stats}`;
         })
